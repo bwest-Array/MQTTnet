@@ -5,11 +5,12 @@
     <AssemblyName>MQTTnet</AssemblyName>
     <RootNamespace>MQTTnet</RootNamespace>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <Company />
-    <Product />
-    <Description />
-    <Authors />
-    <PackageId />
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>

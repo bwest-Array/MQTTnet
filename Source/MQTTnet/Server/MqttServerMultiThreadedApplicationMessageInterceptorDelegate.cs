@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using MQTTnet.Diagnostics;
 using MQTTnet.Implementations;
@@ -38,7 +38,7 @@ namespace MQTTnet.Server
                 {
                     context.Logger.Error(exception, "Error while intercepting application message.");
                 }
-            }).RunInBackground();
+            }); // just to build as submodule
 
             return PlatformAbstractionLayer.CompletedTask;
         }
