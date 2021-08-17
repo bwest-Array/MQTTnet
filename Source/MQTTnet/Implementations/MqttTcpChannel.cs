@@ -118,7 +118,7 @@ namespace MQTTnet.Implementations
 
                 Endpoint = socket.RemoteEndPoint?.ToString();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 socket?.Dispose();
                 throw;

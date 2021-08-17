@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using MQTTnet.Client.Connecting;
 
 namespace MQTTnet.Client.Disconnecting
 {
     public sealed class MqttClientDisconnectedEventArgs : EventArgs
     {
+        [Obsolete]
         public MqttClientDisconnectedEventArgs(bool clientWasConnected, Exception exception, MqttClientAuthenticateResult authenticateResult, MqttClientDisconnectReason reason)
         {
             ClientWasConnected = clientWasConnected;

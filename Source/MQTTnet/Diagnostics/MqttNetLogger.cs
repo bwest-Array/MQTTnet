@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MQTTnet.Diagnostics
 {
@@ -26,6 +26,7 @@ namespace MQTTnet.Diagnostics
             return new MqttNetScopedLogger(this, source);
         }
 
+        [Obsolete]
         public void Publish(MqttNetLogLevel level, string source, string message, object[] parameters, Exception exception)
         {
             var hasLocalListeners = LogMessagePublished != null;

@@ -1,4 +1,4 @@
-﻿#if !WINDOWS_UWP
+#if !WINDOWS_UWP
 using MQTTnet.Adapter;
 using MQTTnet.Diagnostics;
 using MQTTnet.Server;
@@ -30,6 +30,7 @@ namespace MQTTnet.Implementations
 
         public bool TreatSocketOpeningErrorAsWarning { get; set; }
 
+        [Obsolete]
         public Task StartAsync(IMqttServerOptions options)
         {
             if (_cancellationTokenSource != null) throw new InvalidOperationException("Server is already started.");

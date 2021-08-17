@@ -62,6 +62,7 @@ namespace MQTTnet.Client
 
         public IMqttClientOptions Options { get; private set; }
 
+        [Obsolete]
         public async Task<MqttClientAuthenticateResult> ConnectAsync(IMqttClientOptions options, CancellationToken cancellationToken)
         {
             if (options == null) throw new ArgumentNullException(nameof(options));
@@ -136,6 +137,7 @@ namespace MQTTnet.Client
             }
         }
 
+        [Obsolete]
         public async Task DisconnectAsync(MqttClientDisconnectOptions options, CancellationToken cancellationToken)
         {
             if (options is null) throw new ArgumentNullException(nameof(options));
@@ -319,6 +321,7 @@ namespace MQTTnet.Client
             if (IsConnected) throw new MqttProtocolViolationException(message);
         }
 
+        [Obsolete]
         Task DisconnectInternalAsync(Task sender, Exception exception, MqttClientAuthenticateResult authenticateResult)
         {
             var clientWasConnected = IsConnected;
@@ -331,6 +334,7 @@ namespace MQTTnet.Client
             return PlatformAbstractionLayer.CompletedTask;
         }
 
+        [Obsolete]
         async Task DisconnectCoreAsync(Task sender, Exception exception, MqttClientAuthenticateResult authenticateResult, bool clientWasConnected)
         {
             TryInitiateDisconnect();
@@ -442,6 +446,7 @@ namespace MQTTnet.Client
             }
         }
 
+        [Obsolete]
         async Task TrySendKeepAliveMessagesAsync(CancellationToken cancellationToken)
         {
             try
@@ -495,6 +500,7 @@ namespace MQTTnet.Client
             }
         }
 
+        [Obsolete]
         async Task TryReceivePacketsAsync(CancellationToken cancellationToken)
         {
             try
@@ -549,6 +555,7 @@ namespace MQTTnet.Client
             }
         }
 
+        [Obsolete]
         async Task TryProcessReceivedPacketAsync(MqttBasePacket packet, CancellationToken cancellationToken)
         {
             try
@@ -705,6 +712,7 @@ namespace MQTTnet.Client
             return SendAsync(pubCompPacket, cancellationToken);
         }
 
+        [Obsolete]
         Task ProcessReceivedDisconnectPacket(MqttDisconnectPacket disconnectPacket)
         {
             _disconnectReason = (MqttClientDisconnectReason) (disconnectPacket.ReasonCode ?? MqttDisconnectReasonCode.NormalDisconnection);

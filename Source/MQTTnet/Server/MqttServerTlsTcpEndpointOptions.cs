@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Authentication;
 using MQTTnet.Certificates;
 
@@ -22,6 +22,7 @@ namespace MQTTnet.Server
 #if !WINDOWS_UWP
         public System.Net.Security.RemoteCertificateValidationCallback RemoteCertificateValidationCallback { get; set; }
 #endif
+        [Obsolete]
         public ICertificateProvider CertificateProvider
         {
             get

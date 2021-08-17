@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.Security;
 using System.Security.Authentication;
@@ -90,6 +90,7 @@ namespace MQTTnet.Server
         }
 
 #if !WINDOWS_UWP
+        [Obsolete]
         public MqttServerOptionsBuilder WithEncryptionCertificate(byte[] value, IMqttServerCertificateCredentials credentials = null)
         {
             if (value == null) throw new ArgumentNullException(nameof(value));
@@ -102,6 +103,7 @@ namespace MQTTnet.Server
             return this;
         }
 
+        [Obsolete]
         public MqttServerOptionsBuilder WithEncryptionCertificate(X509Certificate2 certificate)
         {
             if (certificate == null) throw new ArgumentNullException(nameof(certificate));
