@@ -1,4 +1,4 @@
-using MQTTnet.Client.Receiving;
+﻿using MQTTnet.Client.Receiving;
 using MQTTnet.Diagnostics;
 using System;
 using System.Threading.Tasks;

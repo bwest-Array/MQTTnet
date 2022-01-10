@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using MQTTnet.Client.Connecting;
 
 namespace MQTTnet.Client.Disconnecting

@@ -1,4 +1,4 @@
-using MQTTnet.Adapter;
+﻿using MQTTnet.Adapter;
 using MQTTnet.Diagnostics;
 using MQTTnet.Exceptions;
 using MQTTnet.Formatter;

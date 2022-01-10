@@ -1,4 +1,4 @@
-namespace MQTTnet.Server
+﻿namespace MQTTnet.Server
 {
     public interface IMqttServerCertificateCredentials
     {

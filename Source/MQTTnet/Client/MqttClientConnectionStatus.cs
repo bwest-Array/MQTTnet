@@ -1,4 +1,4 @@
-namespace MQTTnet.Client
+﻿namespace MQTTnet.Client
 {
     public enum MqttClientConnectionStatus
     {

@@ -1,4 +1,4 @@
-#if !WINDOWS_UWP
+﻿#if !WINDOWS_UWP
 using MQTTnet.Channel;
 using MQTTnet.Client.Options;
 using System;
